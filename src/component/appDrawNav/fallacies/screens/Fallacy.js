@@ -57,7 +57,7 @@ class Fallacy extends Component {
     copyIt = (copyThis) => {
         this.set_Text_Into_Clipboard(copyThis)
         .then(() => {
-            this.showSnackBar(700);
+            this.showSnackBar(2000);
         }).catch((err) => {
             console.log(err)
         })

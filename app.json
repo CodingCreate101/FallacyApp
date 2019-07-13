@@ -1,9 +1,16 @@
 {
   "expo": {
     "name": "Rules Of Rationality",
-    "slug": "RR",
+    "slug": "rules-of-rationality",
     "privacy": "public",
     "sdkVersion": "33.0.0",
+    "ios": {
+      "bundleIdentifier": "com.tejastez.rulesofrationality",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.tejastez.rulesofrationality"
+    },
     "platforms": [
       "ios",
       "android",
@@ -22,9 +29,6 @@
     },
     "assetBundlePatterns": [
       "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    }
+    ]
   }
 }
