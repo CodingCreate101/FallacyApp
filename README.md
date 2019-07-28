@@ -2,7 +2,7 @@
 
 ## APP Screenshot:
 
-![SS](https://github.com/CodingCreate101/FallacyApp/blob/master/screenShot/appSS.png "App Screenshot")
+![SS](https://github.com/CodingCreate101/FallacyApp/blob/master/screenShot/appSSsmall.png "App Screenshot")
 
 ## How to use?
 
