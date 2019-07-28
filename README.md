@@ -1,5 +1,9 @@
 ## Hello there!
 
+## APP Screenshot:
+
+![SS](https://github.com/CodingCreate101/FallacyApp/blob/master/screenShot/appSS.png "App Screenshot")
+
 ## How to use?
 
 Two methods:
