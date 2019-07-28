@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 import { createDrawerNavigator, createSwitchNavigator, createAppContainer } from 'react-navigation';
 import StackNav from './src/component/appDrawNav/fallacies/stacks/StackNav';
+import { createBrowserApp } from "@react-navigation/web";
 
 class App extends Component {
     render () {
@@ -23,11 +24,21 @@ const AppDrawNav = createDrawerNavigator({
     // }
 })
 
-const AppSwitchNavigator = createSwitchNavigator({
-    welcome: {screen: AppDrawNav}
+const createApp = Platform.select({
+    web: config => createBrowserApp(config, { history: 'hash' }),
+    default: config => createAppContainer(config),
 });
 
-const AppContainer = createAppContainer(AppSwitchNavigator);
+// const AppSwitchNavigator = createSwitchNavigator({
+//     welcome: {screen: AppDrawNav}
+// });
+
+// const AppContainer = createAppContainer(AppSwitchNavigator);
+const AppContainer = createApp(
+    createSwitchNavigator({
+        welcome: {screen: AppDrawNav}
+    })
+)
 
 const styles = StyleSheet.create({
   container: {
